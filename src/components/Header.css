@@ -1,0 +1,74 @@
+.header {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Linha superior */
+  .top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #111;
+    text-transform: uppercase;
+  }
+  
+  .top-menu-item {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .top-menu-item:hover {
+    color: #b80d0d;
+  }
+  
+  /* Linha do meio: logo centralizada */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+  }
+  
+  .logo-container img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /* Linha inferior: menu principal */
+  .main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px 0 20px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+  }
+  
+  .main-menu-item {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .main-menu-item:hover {
+    color: #b80d0d;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .top-menu,
+    .main-menu {
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    
+    .logo-container img {
+      height: 70px;
+    }
+  }
+  

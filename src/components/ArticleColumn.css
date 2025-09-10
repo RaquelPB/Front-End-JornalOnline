@@ -1,0 +1,20 @@
+/* components/ArticleColumn.css */
+
+.article-column {
+    border-right: 1px solid #ddd;
+    padding-right: 14px;
+  }
+  
+  .article-column:last-child {
+    border-right: none;
+  }
+  
+  .column-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 6px;
+    color: #000;
+  }
+  
