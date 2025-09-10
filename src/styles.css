@@ -1,0 +1,176 @@
+/* styles.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.nav-item {
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+/* Living Section */
+.living-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* Article Column */
+.article-column {
+  border-right: 1px solid #ddd;
+  padding-right: 12px;
+}
+
+.article-column:last-child {
+  border-right: none;
+}
+
+.column-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+/* Article Item */
+.article-item {
+  margin-bottom: 16px;
+}
+
+.article-image-container {
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-label {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+/* Texts */
+.article-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+}
+
+.article-description {
+  font-size: 12px;
+  margin: 0 0 2px 0;
+  color: #333;
+}
+
+.article-extra {
+  font-size: 12px;
+  margin: 0;
+  color: #555;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.footer-section {
+  flex: 1 1 150px;
+}
+
+.footer-section-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item {
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 11px;
+  color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .living-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .article-column {
+    border-right: none;
+    padding-right: 0;
+  }
+}

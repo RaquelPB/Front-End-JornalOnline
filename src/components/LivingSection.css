@@ -1,0 +1,110 @@
+/* Seção geral */
+.living-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 0 16px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fafafa;
+  }
+  
+  /* Título de categoria */
+  .category h3 {
+    font-family: Georgia, serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 6px;
+    color: #111;
+  }
+  
+  /* Container de artigos dentro de uma categoria */
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .articles {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+  
+  /* Cada artigo */
+  .article {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Imagem */
+  .article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Destaque para artigos maiores */
+  .article.featured img {
+    height: 260px;
+  }
+  
+  @media (max-width: 768px) {
+    .article.featured img {
+      height: 180px;
+    }
+  }
+  
+  /* Conteúdo textual */
+  .text-content {
+    padding: 12px 16px;
+  }
+  
+  .article h4 {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #111;
+  }
+  
+  .article p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  
+  .article small {
+    display: block;
+    color: #999;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 6px;
+  }
+  
+  /* Selo/etiqueta */
+  .label {
+    display: inline-block;
+    background-color: #e2b714;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-top: 8px;
+  }
+  
